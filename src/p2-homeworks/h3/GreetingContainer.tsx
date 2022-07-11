@@ -18,7 +18,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const setNameCallback = (event: ChangeEvent<HTMLInputElement>) => {
         setName(event.currentTarget.value);
-        error && setError('');
+        setError('');
     };
 
     const addUser = () => {
@@ -27,9 +27,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         if (clearName) {
             addUserCallback(clearName);
             alert(`Hello ${clearName}!`);
-        } else setError("Your field is empty!");
-
-        setName("");
+            setName("");
+        } else
+            setError("Your field is empty!");
     };
 
     const totalUsers = users.length // need to fix

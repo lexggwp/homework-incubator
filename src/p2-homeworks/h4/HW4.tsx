@@ -10,14 +10,19 @@ function HW4() {
 
     const showAlert = () => {
         if (error) {
-            alert('введите текст...')
+            alert('Введите текст...')
         } else {
             alert(text) // если нет ошибки показать текст
         }
     }
 
     const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
+    const testOnChange = (e: ChangeEvent<HTMLInputElement>) =>
+        setChecked(e.currentTarget.checked)
+
+    const f = (e: ChangeEvent<HTMLInputElement>) => {
+        setText(e.currentTarget.value)
+    }
 
     return (
         <div>
@@ -30,11 +35,12 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
+                    onChange={f}
                     // spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue}// проверьте, рабоет ли смешивание классов
                 />
 
                 {/*----------------------------------------------------*/}

@@ -14,8 +14,8 @@
 }
 
 .red {
-    background: #e31b9d;
-    color: white;
+    background: #e56279;
+    color: #050505;
 }
 .button {
     position: relative;
@@ -42,30 +42,16 @@
 .button:hover::after {
     animation: anim 0.35s linear;
 }
-.button:hover::before {
-    display: block;
-    content: '';
-    position: absolute;
-    left: -100vw;
-    top: 0;
-    height: 100vh;
-    background: white;
-    opacity: 0.2;
-    z-index: 8;
 
-}
 .button:focus {
-    outline: 1px solid #9d0b84;
+    outline: 1px solid #772514;
 }
 .button:active {
-    background: #9d0b84;
+    background: #564745;
+    color: white;
 }
-.button:disabled:after {
-    z-index: -5;
-}
-.button:disabled:before {
-    z-index: -5;
-}
+
+
 .button:disabled {
-    opacity: 0.4;
+    opacity: 0.3;
 }

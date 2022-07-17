@@ -1,16 +1,24 @@
 .input {
     height: 20px;
-    background: grey;
     padding: 10px;
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    background: #e7dcdc;
+    color: #110211;
 }
 
 .input:focus {
     outline: none;
 }
-.superInput {
-    margin: 10px;
-    background: #e7dcdc;
-    color: #110211;
+/*.superInput {*/
+/*    margin: 10px;*/
+/*    background: #e7dcdc;*/
+/*    color: #110211;*/
+/*}*/
+.error {
+    color: red;
+    font-style: italic;
+    margin-top: -10px;
 }
 
 .errorInput {

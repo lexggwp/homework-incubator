@@ -1,0 +1,46 @@
+
+.menuBlock {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -270px;
+    transition: 0.3s ease-in;
+}
+.menuList {
+    margin: 10px 0 0 15px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menuButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 10px 0 0 0;
+    background: #a60915;
+}
+.menuItem{
+    font-size: 18px;
+    margin-right: 20px;
+    color: #2d442a;
+    text-decoration: none;
+}
+.menuItem:hover {
+    text-decoration: underline;
+}
+.menuBlockActive {
+    left: 0;
+}
+.menuItemActive {
+    color: red;
+    font-weight: 600;
+}
+/*-----------------404-page---------------*/
+
+.notFound {
+    color: #e33030;
+    margin: 300px auto;
+    width: 250px;
+    text-align: center;
+    font-size: 50px;
+}

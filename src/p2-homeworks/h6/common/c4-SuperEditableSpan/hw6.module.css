@@ -1,0 +1,10 @@
+.spanStyle {
+    display: inline-flex;
+    padding-top: 10px;
+    color: #0f9825;
+    height: 30px;
+
+}
+.spanStyle:hover {
+    color: #044f12;
+}
